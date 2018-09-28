@@ -13,9 +13,8 @@ namespace Quiz_Game
    
     public partial class Form2 : Form
     {
-         static int counter = 1;
-        string naskah = new string[] 
-        { "siapa ayah hamo?", "kenapa dipanggil hamo ?" , "apa itu hamo?"};
+         static int counter;
+        string []naskah = new string[] { "siapa ayah hamo?", "kenapa dipanggil hamo ?" , "apa itu hamo?"};
 
 
 
@@ -36,7 +35,7 @@ namespace Quiz_Game
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string a = "INI SOAL " + counter.ToString();
+            string a = naskah[counter];
             counter = counter + 1;
             soal.Text = a.ToString();
 
@@ -46,22 +45,21 @@ namespace Quiz_Game
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string a = "INI SOAL " + counter.ToString();
+            string a = naskah[counter];
             counter = counter + 1;
             soal.Text = a.ToString();
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string a = "INI SOAL " + counter.ToString();
+            string a = naskah[counter];
             counter = counter + 1;
             soal.Text = a.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string a = "INI SOAL " + counter.ToString();
+            string a = naskah[counter];
             counter = counter + 1;
             soal.Text = a.ToString();
 

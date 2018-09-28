@@ -39,7 +39,7 @@
             // 
             this.soal.AutoSize = true;
             this.soal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soal.Location = new System.Drawing.Point(172, 67);
+            this.soal.Location = new System.Drawing.Point(51, 66);
             this.soal.Name = "soal";
             this.soal.Size = new System.Drawing.Size(59, 25);
             this.soal.TabIndex = 6;
