@@ -14,7 +14,7 @@ namespace Quiz_Game
     public partial class Form2 : Form
     {
          static int counter = 1;
-        string naskah = new string[] 
+        string[] naskah = new string[] 
         { "siapa ayah hamo?", "kenapa dipanggil hamo ?" , "apa itu hamo?"};
 
 
