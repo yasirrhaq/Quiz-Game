@@ -127,7 +127,6 @@ namespace Quiz_Game
             button2.Text = option2[counter];
             button3.Text = option3[counter];
             button4.Text = option4[counter];
-
         }
     }
 }

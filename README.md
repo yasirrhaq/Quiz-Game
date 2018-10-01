@@ -1,3 +1,2 @@
 # Quiz-Game
-Project Quiz Game
-Wildan
+Project Quiz Game Yasir & Wildan
