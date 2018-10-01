@@ -43,10 +43,5 @@ namespace Quiz_Game
             MessageBox.Show("Terimakasih sudah memainkan Quiz Game !");
             this.Close();
         }
-
-        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
