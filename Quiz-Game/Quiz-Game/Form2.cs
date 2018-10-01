@@ -27,7 +27,7 @@ namespace Quiz_Game
         public Form2()
         {
             InitializeComponent();
-            string conStr = "datasource=localhost; port=3306; username=root; password=12345;database=ppk;SslMode=none";
+            string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
             myCon = new MySqlConnection(conStr);
         }
 
