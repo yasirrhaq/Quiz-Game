@@ -26,20 +26,16 @@ namespace Quiz_Game
             else
             {
                 Form2 f2 = new Form2();
-                f2.FormClosed += new FormClosedEventHandler(formClosed);
                 this.Hide();
                 f2.Show();
             }
         }
 
-        private void formClosed(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void buttonHighscore_Click(object sender, EventArgs e)
         {
-
+            Form f3 = new Form3();
+            this.Hide();
+            f3.Show();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -48,7 +44,7 @@ namespace Quiz_Game
             this.Close();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
