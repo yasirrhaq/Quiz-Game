@@ -69,7 +69,7 @@ namespace Quiz_Game
                 myReader.Close();
                 myCon.Close();
 
-                soal.Text = naskah[counter];
+                soal.Text = (counter + 1) + ". " + naskah[counter];
                 button1.Text = option1[counter];
                 button2.Text = option2[counter];
                 button3.Text = option3[counter];
@@ -119,11 +119,16 @@ namespace Quiz_Game
                 counter++;
             }
                
-            soal.Text = naskah[counter];
+            soal.Text = (counter+1)+". "+naskah[counter];
             button1.Text = option1[counter];
             button2.Text = option2[counter];
             button3.Text = option3[counter];
             button4.Text = option4[counter];
+        }
+
+        private void soal_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

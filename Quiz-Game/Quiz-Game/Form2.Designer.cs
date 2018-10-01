@@ -44,6 +44,7 @@
             this.soal.Size = new System.Drawing.Size(59, 25);
             this.soal.TabIndex = 6;
             this.soal.Text = "Soal";
+            this.soal.Click += new System.EventHandler(this.soal_Click);
             // 
             // button1
             // 
