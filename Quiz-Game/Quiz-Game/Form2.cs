@@ -22,7 +22,12 @@ namespace Quiz_Game
         string[] option3;
         string[] option4;
         string[] jawaban;
+        string[] mapel;
+        bool[] sudahMuncul;
         int banyakRow = 0;
+        int counterBiologi, counterFisika, counterSejarah, counterMatematika,counterKimia;
+        static Random rnd = new Random();
+        int random;
 
         public Form2()
         {
@@ -44,6 +49,7 @@ namespace Quiz_Game
                 {
                     banyakRow++;
                 }
+                random = rnd.Next(banyakRow);
 
                 naskah = new string[banyakRow];
                 option1 = new string[banyakRow];
@@ -51,6 +57,8 @@ namespace Quiz_Game
                 option3 = new string[banyakRow];
                 option4 = new string[banyakRow];
                 jawaban = new string[banyakRow];
+                mapel = new string[banyakRow];
+                sudahMuncul=new bool[banyakRow];
                 myReader.Close();
 
                 myReader = myCommand.ExecuteReader();
@@ -63,17 +71,20 @@ namespace Quiz_Game
                     option3[i] = myReader[4].ToString();
                     option4[i] = myReader[5].ToString();
                     jawaban[i] = myReader[6].ToString();
+                    mapel[i]= myReader[7].ToString();
+                    sudahMuncul[i] = false;
                     i++;
                 }
 
                 myReader.Close();
                 myCon.Close();
 
-                soal.Text = (counter + 1) + ". " + naskah[counter];
-                button1.Text = option1[counter];
-                button2.Text = option2[counter];
-                button3.Text = option3[counter];
-                button4.Text = option4[counter];
+                soal.Text = (counter + 1) + ". " + naskah[random];
+                button1.Text = option1[random];
+                button2.Text = option2[random];
+                button3.Text = option3[random];
+                button4.Text = option4[random];
+                sudahMuncul[random] = true;
 
             }
             catch (Exception ex)
@@ -105,7 +116,7 @@ namespace Quiz_Game
         private void PindahSoal(string pilihan)
         {
             
-            if (jawaban[counter].Equals(pilihan))
+            if (jawaban[random].Equals(pilihan))
             {
                 MessageBox.Show("BENAR");
             }
@@ -114,16 +125,23 @@ namespace Quiz_Game
                 MessageBox.Show("SALAH");
             }
 
-            if (counter < banyakRow-1)
+            if (counter < 9)
             {
                 counter++;
+
+                while(sudahMuncul[random])
+                {
+                  random = rnd.Next(banyakRow);
+                }
+                
+
+                soal.Text = (counter + 1) + ". " + naskah[random];
+                button1.Text = option1[random];
+                button2.Text = option2[random];
+                button3.Text = option3[random];
+                button4.Text = option4[random];
+                sudahMuncul[random] = true;
             }
-               
-            soal.Text = (counter+1)+". "+naskah[counter];
-            button1.Text = option1[counter];
-            button2.Text = option2[counter];
-            button3.Text = option3[counter];
-            button4.Text = option4[counter];
         }
 
         private void soal_Click(object sender, EventArgs e)

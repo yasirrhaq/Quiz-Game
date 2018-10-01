@@ -39,7 +39,7 @@
             // 
             this.soal.AutoSize = true;
             this.soal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soal.Location = new System.Drawing.Point(51, 66);
+            this.soal.Location = new System.Drawing.Point(51, 55);
             this.soal.Name = "soal";
             this.soal.Size = new System.Drawing.Size(59, 25);
             this.soal.TabIndex = 6;
@@ -48,12 +48,13 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Location = new System.Drawing.Point(56, 171);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 54);
             this.button1.TabIndex = 7;
             this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
@@ -92,10 +93,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(431, 346);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.soal);
             this.Name = "Form2";
             this.Text = "Form2";
