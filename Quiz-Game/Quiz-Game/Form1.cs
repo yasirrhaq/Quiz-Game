@@ -17,7 +17,7 @@ namespace Quiz_Game
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonStart_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBox1.Text))
             {
@@ -37,14 +37,15 @@ namespace Quiz_Game
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonHighscore_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Terimakasih sudah memainkan Quiz Game !");
+            this.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)

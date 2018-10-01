@@ -88,9 +88,6 @@ namespace Quiz_Game
             string a = naskah[counter];
             counter = counter + 1;
             soal.Text = a.ToString();
-
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
