@@ -85,6 +85,12 @@ namespace Quiz_Game
         private void button1_Click(object sender, EventArgs e)
         {
             PindahSoal(button1.Text);
+            string a = naskah[counter];
+            counter = counter + 1;
+            soal.Text = a.ToString();
+
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -128,4 +134,3 @@ namespace Quiz_Game
         }
     }
 }
-
