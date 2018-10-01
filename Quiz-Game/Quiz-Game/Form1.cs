@@ -31,11 +31,6 @@ namespace Quiz_Game
             }
         }
 
-        private void formClosed(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void buttonHighscore_Click(object sender, EventArgs e)
         {
             Form f3 = new Form3();
