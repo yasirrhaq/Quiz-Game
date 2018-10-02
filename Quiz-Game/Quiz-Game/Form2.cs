@@ -28,6 +28,7 @@ namespace Quiz_Game
         int counterBiologi, counterFisika, counterSejarah, counterMatematika,counterKimia;
         static Random rnd = new Random();
         int random;
+        public static int nilai=0;
 
         public Form2()
         {
@@ -119,6 +120,7 @@ namespace Quiz_Game
             if (jawaban[random].Equals(pilihan))
             {
                 MessageBox.Show("BENAR");
+                nilai = nilai + 10;
             }
             else
             {
@@ -141,6 +143,12 @@ namespace Quiz_Game
                 button3.Text = option3[random];
                 button4.Text = option4[random];
                 sudahMuncul[random] = true;
+            }
+            else
+            {
+                Form f3 = new Form3();
+                this.Hide();
+                f3.Show();
             }
         }
 

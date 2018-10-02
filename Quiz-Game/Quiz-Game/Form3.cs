@@ -23,5 +23,10 @@ namespace Quiz_Game
             this.Hide();
             f1.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Form1.username + Form2.nilai.ToString());
+        }
     }
 }

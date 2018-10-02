@@ -14,6 +14,7 @@ namespace Quiz_Game
     public partial class Form1 : Form
     {
         private MySqlConnection myCon;
+        public static string username = "";
 
         public Form1()
         {
@@ -30,6 +31,7 @@ namespace Quiz_Game
             }
             else
             {
+                username = textBox1.Text;
                 Form2 f2 = new Form2();
                 this.Hide();
                 f2.Show();
@@ -47,6 +49,11 @@ namespace Quiz_Game
         {
             MessageBox.Show("Terimakasih sudah memainkan Quiz Game !");
             this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
