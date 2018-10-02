@@ -30,17 +30,6 @@ namespace Quiz_Game
             }
             else
             {
-                try
-                {
-                    myCon.Open();
-                    MySqlCommand myCommand = new MySqlCommand("insert into player(username) values ('"+textBox1.Text+"');", myCon);
-                    myCommand.ExecuteNonQuery();
-                    myCon.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
                 Form2 f2 = new Form2();
                 this.Hide();
                 f2.Show();
