@@ -11,13 +11,12 @@ using MySql.Data.MySqlClient;
 
 namespace Quiz_Game
 {
-
     public partial class Form2 : Form
     {
         public MySqlConnection myCon;
         int counter = 0;
         string[] naskah, jawaban, option1, option2, option3, option4;
-        string[] mapel = {"sejarah","matematika","biologi","kimia","fisika"};
+        string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
         int banyakRow = 10;
         int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
         public static int nilai=0;
@@ -43,10 +42,9 @@ namespace Quiz_Game
             int i = 0;
 
             myCon.Open();
-            for (int j = 0; j < 5; j++)
+            for (int j = 0; j < jenisMapel.Length; j++)
             {
-            
-                string query = "SELECT * FROM soal where mapel='" + mapel[j] + "' ORDER BY RAND()LIMIT 2";
+                string query = "SELECT * FROM soal where mapel='" + jenisMapel[j] + "' ORDER BY RAND()LIMIT 2";
                 MySqlCommand myCommand = new MySqlCommand(query, myCon);
                 myReader = myCommand.ExecuteReader();
                 while (myReader.Read())
@@ -57,7 +55,6 @@ namespace Quiz_Game
                     option3[i] = myReader[4].ToString();
                     option4[i] = myReader[5].ToString();
                     jawaban[i] = myReader[6].ToString();
-                    mapel[i] = myReader[7].ToString();
                     i++;
                 }
                 myReader.Close();
