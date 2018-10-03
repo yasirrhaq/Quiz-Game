@@ -133,7 +133,7 @@
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(552, 261);
+            this.label6.Location = new System.Drawing.Point(485, 226);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(145, 36);
             this.label6.TabIndex = 39;
@@ -145,11 +145,11 @@
             this.label7.BackColor = System.Drawing.Color.Black;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(185, 261);
+            this.label7.Location = new System.Drawing.Point(48, 226);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 36);
+            this.label7.Size = new System.Drawing.Size(363, 36);
             this.label7.TabIndex = 36;
-            this.label7.Text = "Ilham";
+            this.label7.Text = "Ilham (165150200111120)";
             // 
             // panel1
             // 
@@ -166,7 +166,7 @@
             this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(552, 307);
+            this.label8.Location = new System.Drawing.Point(485, 262);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(145, 36);
             this.label8.TabIndex = 43;
@@ -178,11 +178,11 @@
             this.label9.BackColor = System.Drawing.Color.Black;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(185, 297);
+            this.label9.Location = new System.Drawing.Point(48, 262);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 36);
+            this.label9.Size = new System.Drawing.Size(338, 36);
             this.label9.TabIndex = 42;
-            this.label9.Text = "Ega";
+            this.label9.Text = "Ega (165150201111210)";
             // 
             // label5
             // 
@@ -190,7 +190,7 @@
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(485, 388);
+            this.label5.Location = new System.Drawing.Point(485, 379);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(335, 36);
             this.label5.TabIndex = 47;
@@ -202,7 +202,7 @@
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(485, 343);
+            this.label4.Location = new System.Drawing.Point(485, 334);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(335, 36);
             this.label4.TabIndex = 46;
@@ -214,11 +214,11 @@
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(185, 388);
+            this.label3.Location = new System.Drawing.Point(48, 379);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 36);
+            this.label3.Size = new System.Drawing.Size(380, 36);
             this.label3.TabIndex = 45;
-            this.label3.Text = "Wildan";
+            this.label3.Text = "Wildan (165150200111118)";
             // 
             // label2
             // 
@@ -226,11 +226,11 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(185, 343);
+            this.label2.Location = new System.Drawing.Point(48, 334);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 36);
+            this.label2.Size = new System.Drawing.Size(335, 36);
             this.label2.TabIndex = 44;
-            this.label2.Text = "Yasir";
+            this.label2.Text = "Yasir (16510201111185)";
             // 
             // label10
             // 
@@ -238,11 +238,11 @@
             this.label10.BackColor = System.Drawing.Color.Black;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(485, 225);
+            this.label10.Location = new System.Drawing.Point(485, 298);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(209, 36);
-            this.label10.TabIndex = 53;
-            this.label10.Text = "Pembuat Soal";
+            this.label10.Size = new System.Drawing.Size(237, 36);
+            this.label10.TabIndex = 55;
+            this.label10.Text = "Perancang Soal";
             // 
             // label12
             // 
@@ -250,11 +250,11 @@
             this.label12.BackColor = System.Drawing.Color.Black;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(185, 225);
+            this.label12.Location = new System.Drawing.Point(48, 298);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 36);
-            this.label12.TabIndex = 52;
-            this.label12.Text = "Agit";
+            this.label12.Size = new System.Drawing.Size(341, 36);
+            this.label12.TabIndex = 54;
+            this.label12.Text = "Agit (165150201111180)";
             // 
             // Form5
             // 

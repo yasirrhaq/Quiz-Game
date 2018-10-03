@@ -62,5 +62,12 @@ namespace Quiz_Game
         {
             MessageBox.Show("Quiz Game"+"\nTerdiri dari 10 Soal acak"+"\nUser harus memilih jawaban yang benar"+"\nBenar nilai +10 dan Salah +0");
         }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f5 = new Form5();
+            this.Hide();
+            f5.Show();
+        }
     }
 }
