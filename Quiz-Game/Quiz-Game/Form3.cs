@@ -14,8 +14,8 @@ namespace Quiz_Game
     public partial class Form3 : Form
     {
         public MySqlConnection myCon;
-        string[] dataUsername = new string[3];
-        int[] dataNilai=new int[3];
+        string[] dataUsername = new string[5];
+        int[] dataNilai=new int[5];
 
         public Form3()
         {
@@ -34,13 +34,13 @@ namespace Quiz_Game
         private void Form3_Load(object sender, EventArgs e)
         {
             myCon.Open();
-            string query = "SELECT TOP 5 username, nilai FROM player ORDER BY nilai DESC";
+            string query = "SELECT * FROM player ORDER BY nilai DESC LIMIT 5";
             MySqlCommand myCommand = new MySqlCommand(query, myCon);
             MySqlDataReader myReader = myCommand.ExecuteReader();
             for (int i = 0; myReader.Read(); i++)
             {
                 dataUsername[i] = myReader[1].ToString();
-                dataNilai[i] =Convert.ToInt16(myReader[1]);
+                dataNilai[i] =Convert.ToInt16(myReader[2]);
             }
             myReader.Close();
             myCon.Close();
