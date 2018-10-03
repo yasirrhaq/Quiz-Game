@@ -14,7 +14,7 @@ namespace Quiz_Game
     public partial class Form2 : Form
     {
         public MySqlConnection myCon;
-        int _ticks=30;
+        int _ticks=20;
         int counter = 0;
         string[] naskah, jawaban, option1, option2, option3, option4,mapel;
         string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
@@ -121,7 +121,7 @@ namespace Quiz_Game
                 this.Hide();
                 f4.Show();
             }
-            _ticks = 31;
+            _ticks = 21;
         }
         //hitung counter per soal
         private void hitungCounter(int cek)
@@ -162,7 +162,6 @@ namespace Quiz_Game
         private void help(object sender, EventArgs e)
         {
             this.form1.helpToolStripMenuItem_Click(sender, e);
-            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
