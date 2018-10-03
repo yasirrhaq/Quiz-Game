@@ -72,6 +72,7 @@ namespace Quiz_Game
             button3.Text = option3[counter];
             button4.Text = option4[counter];
             timer1.Start();
+           
 
         }
 
@@ -100,6 +101,7 @@ namespace Quiz_Game
             
             if (jawaban[counter].Equals(pilihan))
             {
+
                 MessageBox.Show("BENAR");
                 hitungCounter(counter);
                 
@@ -122,6 +124,7 @@ namespace Quiz_Game
             }
             else
             {
+                timer1.Stop();
                 Form f4 = new Form4(form1);
                 this.Hide();
                 f4.Show();
@@ -156,6 +159,8 @@ namespace Quiz_Game
             MessageBox.Show("CEPETAN BEGOK DIWAKTUIN INI ");
             timer1.Stop();
             PindahSoal(" ");
+       
+            
         }
     }
 }

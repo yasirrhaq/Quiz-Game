@@ -68,5 +68,10 @@ namespace Quiz_Game
             this.form1.helpToolStripMenuItem_Click(sender, e);
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
