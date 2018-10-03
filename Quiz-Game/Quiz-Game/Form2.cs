@@ -160,12 +160,6 @@ namespace Quiz_Game
             this.form1.buttonExit_Click(sender, e);
         }
 
-        private void aboutUs(object sender, EventArgs e)
-        {
-            this.form1.aboutUsToolStripMenuItem_Click(sender, e);
-            this.Hide();
-        }
-
         private void help(object sender, EventArgs e)
         {
             this.form1.helpToolStripMenuItem_Click(sender, e);
