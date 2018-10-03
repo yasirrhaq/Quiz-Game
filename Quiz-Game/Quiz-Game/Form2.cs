@@ -20,6 +20,12 @@ namespace Quiz_Game
         int banyakRow = 10;
         public static int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            PindahSoal(" ");
+            timer1.Stop();
+        }
+
         public static int nilai=0;
     
         public Form2()
@@ -67,6 +73,7 @@ namespace Quiz_Game
             button2.Text = option2[counter];
             button3.Text = option3[counter];
             button4.Text = option4[counter];
+            timer1.Start();
 
         }
 
@@ -97,10 +104,13 @@ namespace Quiz_Game
             {
                 MessageBox.Show("BENAR");
                 hitungCounter(counter);
+                timer1.Start();
+                
             }
             else
             {
                 MessageBox.Show("SALAH");
+                timer1.Start();
             }
 
             if (counter < 9)

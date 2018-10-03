@@ -40,7 +40,7 @@ namespace Quiz_Game
             for (int i = 0; myReader.Read(); i++)
             {
                 dataUsername[i] = myReader[1].ToString();
-                dataNilai[i] =Convert.ToInt16(myReader[2]);
+                dataNilai[i] =Convert.ToInt32(myReader[2]);
             }
             myReader.Close();
             myCon.Close();
