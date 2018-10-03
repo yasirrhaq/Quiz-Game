@@ -14,6 +14,9 @@ namespace Quiz_Game
     public partial class Form3 : Form
     {
         public MySqlConnection myCon;
+        string[] dataUsername = new string[3];
+        int[] dataNilai=new int[3];
+
         public Form3()
         {
             InitializeComponent();
