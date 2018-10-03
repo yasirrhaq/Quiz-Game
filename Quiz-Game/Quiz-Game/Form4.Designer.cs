@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.total = new System.Windows.Forms.Label();
+            this.nilaiHistory = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.nilaiChemistry = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.nilaiPhysics = new System.Windows.Forms.Label();
+            this.nilaiMath = new System.Windows.Forms.Label();
+            this.nilaiBio = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,29 +65,29 @@
             this.panel3.Size = new System.Drawing.Size(812, 45);
             this.panel3.TabIndex = 0;
             // 
-            // label13
+            // total
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Black;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(563, 413);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 36);
-            this.label13.TabIndex = 43;
-            this.label13.Text = "8/10";
+            this.total.AutoSize = true;
+            this.total.BackColor = System.Drawing.Color.Black;
+            this.total.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total.ForeColor = System.Drawing.Color.White;
+            this.total.Location = new System.Drawing.Point(563, 413);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(76, 36);
+            this.total.TabIndex = 43;
+            this.total.Text = "8/10";
             // 
-            // label12
+            // nilaiHistory
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(563, 354);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 36);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "2/2";
+            this.nilaiHistory.AutoSize = true;
+            this.nilaiHistory.BackColor = System.Drawing.Color.White;
+            this.nilaiHistory.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilaiHistory.ForeColor = System.Drawing.Color.Black;
+            this.nilaiHistory.Location = new System.Drawing.Point(563, 354);
+            this.nilaiHistory.Name = "nilaiHistory";
+            this.nilaiHistory.Size = new System.Drawing.Size(60, 36);
+            this.nilaiHistory.TabIndex = 42;
+            this.nilaiHistory.Text = "2/2";
             // 
             // label11
             // 
@@ -113,29 +113,29 @@
             this.label10.TabIndex = 40;
             this.label10.Text = "Total";
             // 
-            // label9
+            // nilaiChemistry
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(563, 318);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 36);
-            this.label9.TabIndex = 39;
-            this.label9.Text = "1/2";
+            this.nilaiChemistry.AutoSize = true;
+            this.nilaiChemistry.BackColor = System.Drawing.Color.White;
+            this.nilaiChemistry.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilaiChemistry.ForeColor = System.Drawing.Color.Black;
+            this.nilaiChemistry.Location = new System.Drawing.Point(563, 318);
+            this.nilaiChemistry.Name = "nilaiChemistry";
+            this.nilaiChemistry.Size = new System.Drawing.Size(60, 36);
+            this.nilaiChemistry.TabIndex = 39;
+            this.nilaiChemistry.Text = "1/2";
             // 
-            // label8
+            // label
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(228, 318);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 36);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Bahasa";
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.White;
+            this.label.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.Black;
+            this.label.Location = new System.Drawing.Point(228, 318);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(156, 36);
+            this.label.TabIndex = 38;
+            this.label.Text = "Chemistry";
             // 
             // button1
             // 
@@ -147,42 +147,44 @@
             this.button1.TabIndex = 37;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label6
+            // nilaiPhysics
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(563, 282);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 36);
-            this.label6.TabIndex = 36;
-            this.label6.Text = "2/2";
+            this.nilaiPhysics.AutoSize = true;
+            this.nilaiPhysics.BackColor = System.Drawing.Color.White;
+            this.nilaiPhysics.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilaiPhysics.ForeColor = System.Drawing.Color.Black;
+            this.nilaiPhysics.Location = new System.Drawing.Point(563, 282);
+            this.nilaiPhysics.Name = "nilaiPhysics";
+            this.nilaiPhysics.Size = new System.Drawing.Size(60, 36);
+            this.nilaiPhysics.TabIndex = 36;
+            this.nilaiPhysics.Text = "2/2";
             // 
-            // label5
+            // nilaiMath
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(563, 246);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 36);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "2/2";
+            this.nilaiMath.AutoSize = true;
+            this.nilaiMath.BackColor = System.Drawing.Color.White;
+            this.nilaiMath.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilaiMath.ForeColor = System.Drawing.Color.Black;
+            this.nilaiMath.Location = new System.Drawing.Point(563, 246);
+            this.nilaiMath.Name = "nilaiMath";
+            this.nilaiMath.Size = new System.Drawing.Size(60, 36);
+            this.nilaiMath.TabIndex = 35;
+            this.nilaiMath.Text = "2/2";
+            this.nilaiMath.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label4
+            // nilaiBio
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(563, 210);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 36);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "1/2";
+            this.nilaiBio.AutoSize = true;
+            this.nilaiBio.BackColor = System.Drawing.Color.White;
+            this.nilaiBio.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilaiBio.ForeColor = System.Drawing.Color.Black;
+            this.nilaiBio.Location = new System.Drawing.Point(563, 210);
+            this.nilaiBio.Name = "nilaiBio";
+            this.nilaiBio.Size = new System.Drawing.Size(60, 36);
+            this.nilaiBio.TabIndex = 34;
+            this.nilaiBio.Text = "1/2";
             // 
             // label7
             // 
@@ -308,16 +310,16 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(844, 521);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.total);
+            this.Controls.Add(this.nilaiHistory);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.nilaiChemistry);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.nilaiPhysics);
+            this.Controls.Add(this.nilaiMath);
+            this.Controls.Add(this.nilaiBio);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -325,6 +327,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "Form4";
             this.Text = "Quiz Game";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -338,16 +341,16 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label total;
+        private System.Windows.Forms.Label nilaiHistory;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label nilaiChemistry;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label nilaiPhysics;
+        private System.Windows.Forms.Label nilaiMath;
+        private System.Windows.Forms.Label nilaiBio;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
