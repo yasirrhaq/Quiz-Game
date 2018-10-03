@@ -19,9 +19,6 @@ namespace Quiz_Game
         string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
         int banyakRow = 10;
         public static int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
-
-        
-
         public static int nilai=0;
 
         Form1 form1;
@@ -154,6 +151,24 @@ namespace Quiz_Game
                 counterFisika++;
             }
         }
+
+        private void newGame(object sender, EventArgs e)
+        {
+            this.form1.newGameToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
+        private void exit(object sender, EventArgs e)
+        {
+            this.form1.buttonExit_Click(sender, e);
+        }
+
+        private void help(object sender, EventArgs e)
+        {
+            this.form1.helpToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             MessageBox.Show("CEPETAN BEGOK DIWAKTUIN INI ");
