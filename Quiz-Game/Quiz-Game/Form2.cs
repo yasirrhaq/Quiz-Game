@@ -120,6 +120,7 @@ namespace Quiz_Game
                 Form f4 = new Form4(form1);
                 this.Hide();
                 f4.Show();
+                timer1.Stop();
             }
             _ticks = 21;
         }
