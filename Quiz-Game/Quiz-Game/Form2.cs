@@ -19,17 +19,12 @@ namespace Quiz_Game
         string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
         int banyakRow = 10;
         int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public static int nilai=0;
-    
-        public Form2()
+        Form1 form1;
+        public Form2(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
             string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
             myCon = new MySqlConnection(conStr);
         }
@@ -70,7 +65,28 @@ namespace Quiz_Game
             button2.Text = option2[counter];
             button3.Text = option3[counter];
             button4.Text = option4[counter];
+        }
 
+        private void newGame(object sender, EventArgs e)
+        {
+            this.form1.newGameToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
+        private void exit(object sender, EventArgs e)
+        {
+            this.form1.buttonExit_Click(sender, e);
+        }
+
+        private void aboutUs(object sender, EventArgs e)
+        {
+            this.form1.aboutUsToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
+        private void help(object sender, EventArgs e)
+        {
+            this.form1.helpToolStripMenuItem_Click(sender, e);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,31 +133,5 @@ namespace Quiz_Game
                 button4.Text = option4[counter];
             }
         }
-        //hitung counter per soal
-    //  private void hitungCounter(int cek)
-    //   {
-    //        if (jenisMapel[cek].ToString().Equals("kimia"))
-    //        {
-    //            counterKimia++;
-    //        }
-    //        else if (jenisMapel[cek].ToString().Equals("matematika"))
-    //        {
-    //            counterMatematika++;
-    //        }
-    //        else if (jenisMapel[cek].ToString().Equals("sejarah"))
-    //        {
-    //            counterSejarah++;
-    //        }
-    //        else if (jenisMapel[cek].ToString().Equals("biologi"))
-    //        {
-    //            counterBiologi++;
-    //        }
-    //        else if (jenisMapel[cek].ToString().Equals("fisika"))
-    //        {
-    //            counterFisika++;
-    //        }
-    //        label1.Text = "b" + counterBiologi + " f" + counterFisika + " k" + counterKimia
-    //+ " M" + counterMatematika + " s" + counterSejarah;
-    //    }
     }
 }

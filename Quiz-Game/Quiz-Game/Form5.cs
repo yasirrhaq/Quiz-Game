@@ -12,9 +12,40 @@ namespace Quiz_Game
 {
     public partial class Form5 : Form
     {
-        public Form5()
+        Form1 form1;
+        public Form5(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            form1 = new Form1();
+            this.Hide();
+            form1.Show();
+        }
+
+        private void newGame(object sender, EventArgs e)
+        {
+            this.form1.newGameToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
+        private void exit(object sender, EventArgs e)
+        {
+            this.form1.buttonExit_Click(sender, e);
+        }
+
+        private void aboutUs(object sender, EventArgs e)
+        {
+            this.form1.aboutUsToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
+        private void help(object sender, EventArgs e)
+        {
+            this.form1.helpToolStripMenuItem_Click(sender, e);
         }
     }
 }

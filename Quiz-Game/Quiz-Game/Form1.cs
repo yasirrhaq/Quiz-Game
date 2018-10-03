@@ -32,7 +32,7 @@ namespace Quiz_Game
             else
             {
                 username = textBox1.Text;
-                Form2 f2 = new Form2();
+                Form2 f2 = new Form2(this);
                 this.Hide();
                 f2.Show();
             }
@@ -40,44 +40,34 @@ namespace Quiz_Game
 
         private void buttonHighscore_Click(object sender, EventArgs e)
         {
-            Form f3 = new Form3();
+            Form f3 = new Form3(this);
             this.Hide();
             f3.Show();
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        public void buttonExit_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Terimakasih sudah memainkan Quiz Game !");
             Application.Exit();
         }
 
-        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        public void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
             this.Hide();
             f1.Show();
         }
 
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        public void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Quiz Game"+"\nTerdiri dari 10 Soal acak"+"\nUser harus memilih jawaban yang benar"+"\nBenar nilai +10 dan Salah +0");
         }
 
-        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        public void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form f5 = new Form5();
+            Form f5 = new Form5(this);
             this.Hide();
             f5.Show();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
