@@ -14,6 +14,7 @@ namespace Quiz_Game
     public partial class Form2 : Form
     {
         public MySqlConnection myCon;
+        int _ticks=30;
         int counter = 0;
         string[] naskah, jawaban, option1, option2, option3, option4,mapel;
         string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
@@ -26,6 +27,7 @@ namespace Quiz_Game
         {
             InitializeComponent();
             this.form1 = form1;
+            timer1.Start();
             string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
             myCon = new MySqlConnection(conStr);
         }
@@ -68,9 +70,6 @@ namespace Quiz_Game
             button2.Text = option2[counter];
             button3.Text = option3[counter];
             button4.Text = option4[counter];
-            timer1.Start();
-           
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -95,37 +94,34 @@ namespace Quiz_Game
 
         private void PindahSoal(string pilihan)
         {
-            
             if (jawaban[counter].Equals(pilihan))
             {
-
                 MessageBox.Show("BENAR");
                 hitungCounter(counter);
                 
             }
-            else
+            else if(jawaban[counter].ToString()!=pilihan && _ticks > 0)
             {
                 MessageBox.Show("SALAH");
             }
 
             if (counter < 9)
             {
+                timer1.Start();
                 counter++;
-
                 soal.Text = (counter + 1) + ". " + naskah[counter];
                 button1.Text = option1[counter];
                 button2.Text = option2[counter];
                 button3.Text = option3[counter];
                 button4.Text = option4[counter];
-                timer1.Start();
             }
             else
             {
-                timer1.Stop();
                 Form f4 = new Form4(form1);
                 this.Hide();
                 f4.Show();
             }
+            _ticks = 31;
         }
         //hitung counter per soal
         private void hitungCounter(int cek)
@@ -171,9 +167,21 @@ namespace Quiz_Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("WAKTU HABIS , OTOMATIS JAWABAN SALAH");
-            timer1.Stop();
-            PindahSoal(" ");
+            if (_ticks >=0)
+            {
+                _ticks--;
+                if (_ticks != -1)
+                {
+                    label1.Text = "Timer : " + _ticks;
+                }
+            }
+
+            if (_ticks == 0)
+            {
+                MessageBox.Show("WAKTU HABIS , OTOMATIS JAWABAN SALAH");
+                timer1.Stop();
+                PindahSoal(" ");
+            }
        }
     }
 }
