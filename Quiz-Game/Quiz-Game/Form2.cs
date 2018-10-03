@@ -137,9 +137,9 @@ namespace Quiz_Game
             }
             else
             {
-                Form f3 = new Form3();
+                Form f4 = new Form4();
                 this.Hide();
-                f3.Show();
+                f4.Show();
             }
         }
         //hitung counter per soal
