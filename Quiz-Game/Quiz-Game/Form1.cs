@@ -7,20 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+
 
 namespace Quiz_Game
 {
     public partial class Form1 : Form
     {
-        private MySqlConnection myCon;
         public static string username = "";
 
         public Form1()
         {
             InitializeComponent();
-            string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
-            myCon = new MySqlConnection(conStr);
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
