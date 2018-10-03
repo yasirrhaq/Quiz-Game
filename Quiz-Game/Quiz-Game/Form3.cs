@@ -34,7 +34,7 @@ namespace Quiz_Game
         private void Form3_Load(object sender, EventArgs e)
         {
             myCon.Open();
-            string query = "SELECT top 5 * FROM PLAYER desc";
+            string query = "SELECT TOP 5 username, nilai FROM player ORDER BY nilai DESC";
             MySqlCommand myCommand = new MySqlCommand(query, myCon);
             MySqlDataReader myReader = myCommand.ExecuteReader();
             for (int i = 0; myReader.Read(); i++)
