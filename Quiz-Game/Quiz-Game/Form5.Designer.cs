@@ -62,6 +62,7 @@
             this.buttonBack.TabIndex = 40;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // label1
             // 
@@ -276,7 +277,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Quiz Game - About Us";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
