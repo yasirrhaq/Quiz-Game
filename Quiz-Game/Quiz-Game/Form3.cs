@@ -41,8 +41,6 @@ namespace Quiz_Game
                 dataUsername[i] = myReader[1].ToString();
                 dataNilai[i] =Convert.ToInt16(myReader[1]);
             }
-
-            dataUsername[i];
         }
     }
 }
