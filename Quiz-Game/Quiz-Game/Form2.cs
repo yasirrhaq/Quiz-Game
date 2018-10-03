@@ -174,8 +174,6 @@ namespace Quiz_Game
             MessageBox.Show("WAKTU HABIS , OTOMATIS JAWABAN SALAH");
             timer1.Stop();
             PindahSoal(" ");
-       
-            
-        }
+       }
     }
 }
