@@ -19,6 +19,12 @@ namespace Quiz_Game
         string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
         int banyakRow = 10;
         int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public static int nilai=0;
     
         public Form2()
@@ -36,6 +42,7 @@ namespace Quiz_Game
             option3 = new string[banyakRow];
             option4 = new string[banyakRow];
             jawaban = new string[banyakRow];
+            mapel = new string[banyakRow];
             MySqlDataReader myReader;
 
             int i = 0;
@@ -54,13 +61,14 @@ namespace Quiz_Game
                     option3[i] = myReader[4].ToString();
                     option4[i] = myReader[5].ToString();
                     jawaban[i] = myReader[6].ToString();
+                    mapel[i] = myReader[7].ToString();
                     i++;
                 }
                 myReader.Close();
             }
             myCon.Close();
             soal.Text = (counter + 1) + ". " + naskah[counter];
-            //hitungCounter(counter);
+            hitungCounter(counter);
             button1.Text = option1[counter];
             button2.Text = option2[counter];
             button3.Text = option3[counter];
@@ -106,7 +114,7 @@ namespace Quiz_Game
                 counter++;
 
                 soal.Text = (counter + 1) + ". " + naskah[counter];
-                //hitungCounter(counter);
+                hitungCounter(counter);
                 button1.Text = option1[counter];
                 button2.Text = option2[counter];
                 button3.Text = option3[counter];
