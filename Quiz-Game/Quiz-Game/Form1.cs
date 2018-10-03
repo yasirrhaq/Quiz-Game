@@ -48,12 +48,19 @@ namespace Quiz_Game
         private void buttonExit_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Terimakasih sudah memainkan Quiz Game !");
-            this.Close();
+            Application.Exit();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form1 f1 = new Form1();
+            this.Hide();
+            f1.Show();
+        }
 
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Quiz Game"+"\nTerdiri dari 10 Soal acak"+"\nUser harus memilih jawaban yang benar"+"\nBenar nilai +10 dan Salah +0");
         }
     }
 }
