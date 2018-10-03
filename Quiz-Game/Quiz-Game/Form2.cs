@@ -20,11 +20,6 @@ namespace Quiz_Game
         int banyakRow = 10;
         public static int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public static int nilai=0;
     
         public Form2()
