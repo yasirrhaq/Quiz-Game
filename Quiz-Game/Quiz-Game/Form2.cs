@@ -19,7 +19,7 @@ namespace Quiz_Game
         string[] naskah, jawaban, option1, option2, option3, option4, mapel;
         bool[] sudahMuncul;
         int banyakRow = 0;
-        int counterBiologi, counterFisika, counterSejarah, counterMatematika,counterKimia;
+        int counterBiologi, counterFisika, counterSejarah, counterMatematika,counterKimia, counterTotal;
         static Random rnd = new Random();
         int random;
         public static int nilai=0;
@@ -113,6 +113,7 @@ namespace Quiz_Game
                 MessageBox.Show("BENAR");
                 counterBenar();
                 nilai = nilai + 10;
+                counterTotal++;
             }
             else
             {
@@ -164,8 +165,6 @@ namespace Quiz_Game
             {
                 counterFisika++;
             }
-            label1.Text = "b" + counterBiologi + " f" + counterFisika + " k" + counterKimia
-    + " M" + counterMatematika + " s" + counterSejarah;
         }
     }
 }
