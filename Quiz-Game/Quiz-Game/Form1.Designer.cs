@@ -46,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 133);
+            this.label1.Location = new System.Drawing.Point(236, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 149);
+            this.textBox1.Location = new System.Drawing.Point(212, 157);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(137, 20);
             this.textBox1.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(171, 185);
+            this.buttonStart.Location = new System.Drawing.Point(239, 193);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(81, 23);
             this.buttonStart.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             // buttonHighscore
             // 
-            this.buttonHighscore.Location = new System.Drawing.Point(171, 214);
+            this.buttonHighscore.Location = new System.Drawing.Point(239, 222);
             this.buttonHighscore.Name = "buttonHighscore";
             this.buttonHighscore.Size = new System.Drawing.Size(81, 23);
             this.buttonHighscore.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(171, 243);
+            this.buttonExit.Location = new System.Drawing.Point(239, 251);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(82, 23);
             this.buttonExit.TabIndex = 4;
@@ -97,7 +97,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(431, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(575, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -147,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 346);
+            this.ClientSize = new System.Drawing.Size(575, 403);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonHighscore);
             this.Controls.Add(this.buttonStart);

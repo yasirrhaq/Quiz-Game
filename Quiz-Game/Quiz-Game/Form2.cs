@@ -76,17 +76,15 @@ namespace Quiz_Game
                     sudahMuncul[i] = false;
                     i++;
                 }
-
                 myReader.Close();
                 myCon.Close();
-
                 soal.Text = (counter + 1) + ". " + naskah[random];
+                hitungCounter(random);
                 button1.Text = option1[random];
                 button2.Text = option2[random];
                 button3.Text = option3[random];
                 button4.Text = option4[random];
                 sudahMuncul[random] = true;
-
             }
             catch (Exception ex)
             {
@@ -131,13 +129,12 @@ namespace Quiz_Game
             {
                 counter++;
 
-                while(sudahMuncul[random])
+                while (sudahMuncul[random])
                 {
-                  random = rnd.Next(banyakRow);
+                    random = rnd.Next(banyakRow);
                 }
-                
-
                 soal.Text = (counter + 1) + ". " + naskah[random];
+                hitungCounter(random);
                 button1.Text = option1[random];
                 button2.Text = option2[random];
                 button3.Text = option3[random];
@@ -151,10 +148,31 @@ namespace Quiz_Game
                 f3.Show();
             }
         }
-
-        private void soal_Click(object sender, EventArgs e)
+        //hitung counter per soal
+        private void hitungCounter(int cek)
         {
-
+            if (mapel[cek].ToString().Equals("kimia"))
+            {
+                counterKimia++;
+            }
+            else if (mapel[cek].ToString().Equals("matematika"))
+            {
+                counterMatematika++;
+            }
+            else if (mapel[cek].ToString().Equals("sejarah"))
+            {
+                counterSejarah++;
+            }
+            else if (mapel[cek].ToString().Equals("biologi"))
+            {
+                counterBiologi++;
+            }
+            else if (mapel[cek].ToString().Equals("fisika"))
+            {
+                counterFisika++;
+            }
+            label1.Text = "b" + counterBiologi + " f" + counterFisika + " k" + counterKimia
+    + " M" + counterMatematika + " s" + counterSejarah;
         }
     }
 }
