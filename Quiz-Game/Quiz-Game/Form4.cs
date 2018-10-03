@@ -29,18 +29,14 @@ namespace Quiz_Game
             nilaiHistory.Text = Form2.counterSejarah.ToString() + " / 2";
             nilaiChemistry.Text = Form2.counterKimia.ToString() + " / 2";
             total.Text = (Form2.counterBiologi + Form2.counterFisika + Form2.counterMatematika + Form2.counterSejarah + Form2.counterKimia).ToString() + " / 10";
-            try
-            {
+
                 myCon.Open();
                 string query = "insert into player(username,nilai) values ('"+Form1.username.ToString()+ "','"  + total.Text+ "')";
                 MySqlCommand myCommand = new MySqlCommand(query, myCon);
                 myCommand.ExecuteNonQuery();
                 myCon.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
