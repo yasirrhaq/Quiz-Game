@@ -52,5 +52,10 @@ namespace Quiz_Game
             this.Hide();
             f3.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
