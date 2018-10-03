@@ -20,11 +20,7 @@ namespace Quiz_Game
         int banyakRow = 10;
         public static int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            PindahSoal(" ");
-            timer1.Stop();
-        }
+        
 
         public static int nilai=0;
 
@@ -106,13 +102,11 @@ namespace Quiz_Game
             {
                 MessageBox.Show("BENAR");
                 hitungCounter(counter);
-                timer1.Start();
                 
             }
             else
             {
                 MessageBox.Show("SALAH");
-                timer1.Start();
             }
 
             if (counter < 9)
@@ -124,6 +118,7 @@ namespace Quiz_Game
                 button2.Text = option2[counter];
                 button3.Text = option3[counter];
                 button4.Text = option4[counter];
+                timer1.Start();
             }
             else
             {
@@ -156,28 +151,11 @@ namespace Quiz_Game
                 counterFisika++;
             }
         }
-
-        private void newGame(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            this.form1.newGameToolStripMenuItem_Click(sender, e);
-            this.Hide();    
-        }
-
-        private void exit(object sender, EventArgs e)
-        {
-            this.form1.buttonExit_Click(sender, e);
-        }
-
-        private void aboutUs(object sender, EventArgs e)
-        {
-            this.form1.aboutUsToolStripMenuItem_Click(sender, e);
-            this.Hide();
-        }
-
-        private void help(object sender, EventArgs e)
-        {
-            this.form1.helpToolStripMenuItem_Click(sender, e);
-            this.Hide();
+            MessageBox.Show("CEPETAN BEGOK DIWAKTUIN INI ");
+            timer1.Stop();
+            PindahSoal(" ");
         }
     }
 }
