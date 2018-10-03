@@ -13,10 +13,11 @@ namespace Quiz_Game
 {
     public partial class Form3 : Form
     {
-        Form1 form1;
-        private MySqlConnection myCon;
+        public MySqlConnection myCon;
+        string[] dataUsername = new string[3];
+        int[] dataNilai=new int[3];
 
-        public Form3(Form1 form1)
+        public Form3()
         {
             InitializeComponent();
             this.form1 = form1;
