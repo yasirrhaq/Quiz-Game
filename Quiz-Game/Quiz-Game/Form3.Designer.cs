@@ -226,6 +226,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form3";
             this.Text = "Quiz Game";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

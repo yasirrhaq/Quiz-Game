@@ -147,7 +147,6 @@
             this.button1.TabIndex = 37;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // nilaiPhysics
             // 
@@ -172,7 +171,6 @@
             this.nilaiMath.Size = new System.Drawing.Size(60, 36);
             this.nilaiMath.TabIndex = 35;
             this.nilaiMath.Text = "2/2";
-            this.nilaiMath.Click += new System.EventHandler(this.label5_Click);
             // 
             // nilaiBio
             // 
