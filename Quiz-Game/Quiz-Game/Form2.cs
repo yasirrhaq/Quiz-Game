@@ -11,18 +11,16 @@ using MySql.Data.MySqlClient;
 
 namespace Quiz_Game
 {
-
     public partial class Form2 : Form
     {
         public MySqlConnection myCon;
         int counter = 0;
-        string[] naskah, jawaban, option1, option2, option3, option4, mapel;
-        bool[] sudahMuncul;
-        int banyakRow = 0;
-        int counterBiologi, counterFisika, counterSejarah, counterMatematika,counterKimia, counterTotal;
-        static Random rnd = new Random();
-        int random;
+        string[] naskah, jawaban, option1, option2, option3, option4;
+        string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
+        int banyakRow = 10;
+        int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
         public static int nilai=0;
+       
 
         public Form2()
         {
@@ -33,31 +31,22 @@ namespace Quiz_Game
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            naskah = new string[banyakRow];
+            option1 = new string[banyakRow];
+            option2 = new string[banyakRow];
+            option3 = new string[banyakRow];
+            option4 = new string[banyakRow];
+            jawaban = new string[banyakRow];
             MySqlDataReader myReader;
-            try
+
+            int i = 0;
+
+            myCon.Open();
+            for (int j = 0; j < jenisMapel.Length; j++)
             {
-                myCon.Open();
-                MySqlCommand myCommand = new MySqlCommand("SELECT * FROM soal where mapel='matematika' ORDER BY RAND()LIMIT 2", myCon);
+                string query = "SELECT * FROM soal where mapel='" + jenisMapel[j] + "' ORDER BY RAND()LIMIT 2";
+                MySqlCommand myCommand = new MySqlCommand(query, myCon);
                 myReader = myCommand.ExecuteReader();
-
-                while (myReader.Read())
-                {
-                    banyakRow++;
-                }
-                random = rnd.Next(banyakRow);
-
-                naskah = new string[banyakRow];
-                option1 = new string[banyakRow];
-                option2 = new string[banyakRow];
-                option3 = new string[banyakRow];
-                option4 = new string[banyakRow];
-                jawaban = new string[banyakRow];
-                mapel = new string[banyakRow];
-                sudahMuncul=new bool[banyakRow];
-                myReader.Close();
-
-                myReader = myCommand.ExecuteReader();
-                int i = 0;
                 while (myReader.Read())
                 {
                     naskah[i] = myReader[1].ToString();
@@ -66,23 +55,18 @@ namespace Quiz_Game
                     option3[i] = myReader[4].ToString();
                     option4[i] = myReader[5].ToString();
                     jawaban[i] = myReader[6].ToString();
-                    mapel[i]= myReader[7].ToString();
-                    sudahMuncul[i] = false;
                     i++;
                 }
                 myReader.Close();
-                myCon.Close();
-                soal.Text = (counter + 1) + ". " + naskah[random];
-                button1.Text = option1[random];
-                button2.Text = option2[random];
-                button3.Text = option3[random];
-                button4.Text = option4[random];
-                sudahMuncul[random] = true;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            myCon.Close();
+            soal.Text = (counter + 1) + ". " + naskah[counter];
+            //hitungCounter(counter);
+            button1.Text = option1[counter];
+            button2.Text = option2[counter];
+            button3.Text = option3[counter];
+            button4.Text = option4[counter];
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -108,12 +92,10 @@ namespace Quiz_Game
         private void PindahSoal(string pilihan)
         {
             
-            if (jawaban[random].Equals(pilihan))
+            if (jawaban[counter].Equals(pilihan))
             {
                 MessageBox.Show("BENAR");
-                counterBenar();
                 nilai = nilai + 10;
-                counterTotal++;
             }
             else
             {
@@ -124,47 +106,39 @@ namespace Quiz_Game
             {
                 counter++;
 
-                while (sudahMuncul[random])
-                {
-                    random = rnd.Next(banyakRow);
-                }
-                soal.Text = (counter + 1) + ". " + naskah[random];
-                button1.Text = option1[random];
-                button2.Text = option2[random];
-                button3.Text = option3[random];
-                button4.Text = option4[random];
-                sudahMuncul[random] = true;
-            }
-            else
-            {
-                Form f4 = new Form4();
-                this.Hide();
-                f4.Show();
+                soal.Text = (counter + 1) + ". " + naskah[counter];
+                //hitungCounter(counter);
+                button1.Text = option1[counter];
+                button2.Text = option2[counter];
+                button3.Text = option3[counter];
+                button4.Text = option4[counter];
             }
         }
         //hitung counter per soal
-        private void counterBenar()
-        {
-            if (mapel[random].ToString().Equals("kimia"))
-            {
-                counterKimia++;
-            }
-            else if (mapel[random].ToString().Equals("matematika"))
-            {
-                counterMatematika++;
-            }
-            else if (mapel[random].ToString().Equals("sejarah"))
-            {
-                counterSejarah++;
-            }
-            else if (mapel[random].ToString().Equals("biologi"))
-            {
-                counterBiologi++;
-            }
-            else if (mapel[random].ToString().Equals("fisika"))
-            {
-                counterFisika++;
-            }
-        }
+    //    private void hitungCounter(int cek)
+    //    {
+    //        if (mapel[cek].ToString().Equals("kimia"))
+    //        {
+    //            counterKimia++;
+    //        }
+    //        else if (mapel[cek].ToString().Equals("matematika"))
+    //        {
+    //            counterMatematika++;
+    //        }
+    //        else if (mapel[cek].ToString().Equals("sejarah"))
+    //        {
+    //            counterSejarah++;
+    //        }
+    //        else if (mapel[cek].ToString().Equals("biologi"))
+    //        {
+    //            counterBiologi++;
+    //        }
+    //        else if (mapel[cek].ToString().Equals("fisika"))
+    //        {
+    //            counterFisika++;
+    //        }
+    //        label1.Text = "b" + counterBiologi + " f" + counterFisika + " k" + counterKimia
+    //+ " M" + counterMatematika + " s" + counterSejarah;
+    //    }
     }
 }
