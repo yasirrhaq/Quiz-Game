@@ -39,7 +39,7 @@
             // 
             this.soal.AutoSize = true;
             this.soal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.soal.Location = new System.Drawing.Point(179, 105);
+            this.soal.Location = new System.Drawing.Point(101, 99);
             this.soal.Name = "soal";
             this.soal.Size = new System.Drawing.Size(50, 23);
             this.soal.TabIndex = 6;
@@ -50,7 +50,7 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(196, 188);
+            this.button1.Location = new System.Drawing.Point(118, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 54);
             this.button1.TabIndex = 7;
@@ -63,7 +63,7 @@
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(486, 188);
+            this.button2.Location = new System.Drawing.Point(408, 182);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 54);
             this.button2.TabIndex = 8;
@@ -76,7 +76,7 @@
             this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(196, 261);
+            this.button3.Location = new System.Drawing.Point(118, 255);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(177, 54);
             this.button3.TabIndex = 9;
@@ -89,7 +89,7 @@
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(486, 261);
+            this.button4.Location = new System.Drawing.Point(408, 255);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(177, 54);
             this.button4.TabIndex = 10;
@@ -101,8 +101,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(575, 403);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(844, 521);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
