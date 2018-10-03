@@ -58,9 +58,9 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(205, 217);
+            this.button1.Location = new System.Drawing.Point(196, 188);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 54);
+            this.button1.Size = new System.Drawing.Size(177, 54);
             this.button1.TabIndex = 7;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = false;
@@ -71,9 +71,9 @@
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(495, 217);
+            this.button2.Location = new System.Drawing.Point(486, 188);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 54);
+            this.button2.Size = new System.Drawing.Size(177, 54);
             this.button2.TabIndex = 8;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = false;
@@ -84,9 +84,9 @@
             this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(205, 290);
+            this.button3.Location = new System.Drawing.Point(196, 261);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 54);
+            this.button3.Size = new System.Drawing.Size(177, 54);
             this.button3.TabIndex = 9;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = false;
@@ -97,9 +97,9 @@
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(495, 290);
+            this.button4.Location = new System.Drawing.Point(486, 261);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 54);
+            this.button4.Size = new System.Drawing.Size(177, 54);
             this.button4.TabIndex = 10;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = false;

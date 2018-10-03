@@ -190,7 +190,7 @@
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(485, 379);
+            this.label5.Location = new System.Drawing.Point(485, 370);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(335, 36);
             this.label5.TabIndex = 47;
@@ -214,7 +214,7 @@
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(48, 379);
+            this.label3.Location = new System.Drawing.Point(48, 370);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(380, 36);
             this.label3.TabIndex = 45;

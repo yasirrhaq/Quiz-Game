@@ -20,8 +20,7 @@ namespace Quiz_Game
         int banyakRow = 10;
         int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
         public static int nilai=0;
-       
-
+    
         public Form2()
         {
             InitializeComponent();
@@ -115,25 +114,25 @@ namespace Quiz_Game
             }
         }
         //hitung counter per soal
-    //    private void hitungCounter(int cek)
-    //    {
-    //        if (mapel[cek].ToString().Equals("kimia"))
+    //  private void hitungCounter(int cek)
+    //   {
+    //        if (jenisMapel[cek].ToString().Equals("kimia"))
     //        {
     //            counterKimia++;
     //        }
-    //        else if (mapel[cek].ToString().Equals("matematika"))
+    //        else if (jenisMapel[cek].ToString().Equals("matematika"))
     //        {
     //            counterMatematika++;
     //        }
-    //        else if (mapel[cek].ToString().Equals("sejarah"))
+    //        else if (jenisMapel[cek].ToString().Equals("sejarah"))
     //        {
     //            counterSejarah++;
     //        }
-    //        else if (mapel[cek].ToString().Equals("biologi"))
+    //        else if (jenisMapel[cek].ToString().Equals("biologi"))
     //        {
     //            counterBiologi++;
     //        }
-    //        else if (mapel[cek].ToString().Equals("fisika"))
+    //        else if (jenisMapel[cek].ToString().Equals("fisika"))
     //        {
     //            counterFisika++;
     //        }
