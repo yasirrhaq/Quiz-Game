@@ -73,7 +73,6 @@ namespace Quiz_Game
                 myReader.Close();
                 myCon.Close();
                 soal.Text = (counter + 1) + ". " + naskah[random];
-                hitungCounter(random);
                 button1.Text = option1[random];
                 button2.Text = option2[random];
                 button3.Text = option3[random];
@@ -112,6 +111,7 @@ namespace Quiz_Game
             if (jawaban[random].Equals(pilihan))
             {
                 MessageBox.Show("BENAR");
+                counterBenar();
                 nilai = nilai + 10;
             }
             else
@@ -128,7 +128,6 @@ namespace Quiz_Game
                     random = rnd.Next(banyakRow);
                 }
                 soal.Text = (counter + 1) + ". " + naskah[random];
-                hitungCounter(random);
                 button1.Text = option1[random];
                 button2.Text = option2[random];
                 button3.Text = option3[random];
@@ -143,25 +142,25 @@ namespace Quiz_Game
             }
         }
         //hitung counter per soal
-        private void hitungCounter(int cek)
+        private void counterBenar()
         {
-            if (mapel[cek].ToString().Equals("kimia"))
+            if (mapel[random].ToString().Equals("kimia"))
             {
                 counterKimia++;
             }
-            else if (mapel[cek].ToString().Equals("matematika"))
+            else if (mapel[random].ToString().Equals("matematika"))
             {
                 counterMatematika++;
             }
-            else if (mapel[cek].ToString().Equals("sejarah"))
+            else if (mapel[random].ToString().Equals("sejarah"))
             {
                 counterSejarah++;
             }
-            else if (mapel[cek].ToString().Equals("biologi"))
+            else if (mapel[random].ToString().Equals("biologi"))
             {
                 counterBiologi++;
             }
-            else if (mapel[cek].ToString().Equals("fisika"))
+            else if (mapel[random].ToString().Equals("fisika"))
             {
                 counterFisika++;
             }
