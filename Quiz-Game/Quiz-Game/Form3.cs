@@ -16,10 +16,11 @@ namespace Quiz_Game
         public MySqlConnection myCon;
         string[] dataUsername = new string[5];
         int[] dataNilai=new int[5];
-
-        public Form3()
+        Form1 form1;
+        public Form3(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
             string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
             myCon = new MySqlConnection(conStr);
         }
@@ -56,6 +57,27 @@ namespace Quiz_Game
             nilai4.Text = dataNilai[3].ToString();
             nilai5.Text = dataNilai[4].ToString();
         }
-        
+        private void newGame(object sender, EventArgs e)
+        {
+            this.form1.newGameToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
+        private void exit(object sender, EventArgs e)
+        {
+            this.form1.buttonExit_Click(sender, e);
+        }
+
+        private void aboutUs(object sender, EventArgs e)
+        {
+            this.form1.aboutUsToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
+
+        private void help(object sender, EventArgs e)
+        {
+            this.form1.helpToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
     }
 }

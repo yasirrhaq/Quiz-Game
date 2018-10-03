@@ -23,10 +23,12 @@ namespace Quiz_Game
         
 
         public static int nilai=0;
-    
-        public Form2()
+
+        Form1 form1;
+        public Form2(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
             string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
             myCon = new MySqlConnection(conStr);
         }
@@ -120,7 +122,7 @@ namespace Quiz_Game
             }
             else
             {
-                Form f4 = new Form4();
+                Form f4 = new Form4(form1);
                 this.Hide();
                 f4.Show();
             }
@@ -154,7 +156,6 @@ namespace Quiz_Game
             MessageBox.Show("CEPETAN BEGOK DIWAKTUIN INI ");
             timer1.Stop();
             PindahSoal(" ");
-            
         }
     }
 }

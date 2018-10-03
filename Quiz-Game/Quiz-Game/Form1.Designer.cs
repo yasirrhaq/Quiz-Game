@@ -173,10 +173,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(342, 39);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(297, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 23);
+            this.label3.Size = new System.Drawing.Size(223, 44);
             this.label3.TabIndex = 1;
             this.label3.Text = "Quiz Game";
             // 
@@ -203,7 +203,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Quiz Game";
+            this.Text = "Quiz Game ";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
