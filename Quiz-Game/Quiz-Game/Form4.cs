@@ -33,7 +33,7 @@ namespace Quiz_Game
             try
             {
                 myCon.Open();
-                string query = "insert into player(username,nilai) values ('"+Form1.username.ToString()+ "','"  + total.Text+ "')";
+                string query = "insert into player(username,nilai) values ('" + Form1.username.ToString() + "','" + total.Text + "')";
                 MySqlCommand myCommand = new MySqlCommand(query, myCon);
                 myCommand.ExecuteNonQuery();
                 myCon.Close();

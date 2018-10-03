@@ -16,8 +16,8 @@ namespace Quiz_Game
         public MySqlConnection myCon;
         string[] dataUsername = new string[3];
         int[] dataNilai=new int[3];
-
-        public Form3()
+        Form1 form1;
+        public Form3(Form1 form1)
         {
             InitializeComponent();
             this.form1 = form1;
@@ -59,11 +59,10 @@ namespace Quiz_Game
             string query = "SELECT * FROM PLAYER where order by nilai desc LIMIT 2";
             MySqlCommand myCommand = new MySqlCommand(query, myCon);
             MySqlDataReader myReader = myCommand.ExecuteReader();
-            while (myReader.Read())
+            for (int i = 0; myReader.Read(); i++)
             {
-                naskah[i] = myReader[1].ToString();
-                option1[i] = myReader[2].ToString();
-                option2[i] = myReader[3].ToString();
+                dataUsername[i] = myReader[1].ToString();
+                dataNilai[i] = Convert.ToInt16(myReader[1]);
             }
         }
     }

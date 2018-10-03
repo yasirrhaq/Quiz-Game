@@ -18,7 +18,7 @@ namespace Quiz_Game
         string[] naskah, jawaban, option1, option2, option3, option4,mapel;
         string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
         int banyakRow = 10;
-        public int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
+        public static int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
         public static int nilai=0;
         Form1 form1;
         public Form2(Form1 form1)
