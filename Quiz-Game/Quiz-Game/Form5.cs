@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Quiz_Game
 {
-    public partial class Form3 : Form
+    public partial class Form5 : Form
     {
-        public Form3()
+        public Form5()
         {
             InitializeComponent();
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form1 f1 = new Form1();
-            this.Hide();
-            f1.Show();
         }
     }
 }
