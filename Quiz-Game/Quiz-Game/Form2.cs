@@ -171,7 +171,7 @@ namespace Quiz_Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("CEPETAN BEGOK DIWAKTUIN INI ");
+            MessageBox.Show("WAKTU HABIS , OTOMATIS JAWABAN SALAH");
             timer1.Stop();
             PindahSoal(" ");
        
