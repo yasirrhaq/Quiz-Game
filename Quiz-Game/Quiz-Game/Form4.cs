@@ -12,12 +12,10 @@ namespace Quiz_Game
 {
     public partial class Form4 : Form
     {
-
-        Form1 form1;
         private MySqlConnection myCon;
-        public Form4(Form1 form1)
+        public Form4()
         {
-            this.form1 = form1;
+
             InitializeComponent();
             string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
             myCon = new MySqlConnection(conStr);
@@ -33,7 +31,7 @@ namespace Quiz_Game
             try
             {
                 myCon.Open();
-                string query = "insert into player(username,nilai) values ('" + Form1.username.ToString() + "','" + total.Text + "')";
+                string query = "insert into player(username,nilai) values ('"+Form1.username.ToString()+ "','"  + total.Text+ "')";
                 MySqlCommand myCommand = new MySqlCommand(query, myCon);
                 myCommand.ExecuteNonQuery();
                 myCon.Close();
@@ -43,26 +41,14 @@ namespace Quiz_Game
                 MessageBox.Show(ex.Message);
             }
         }
-        private void newGame(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-            this.form1.newGameToolStripMenuItem_Click(sender, e);
-            this.Hide();
+
         }
 
-        private void exit(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.form1.buttonExit_Click(sender, e);
-        }
 
-        private void aboutUs(object sender, EventArgs e)
-        {
-            this.form1.aboutUsToolStripMenuItem_Click(sender, e);
-            this.Hide();
-        }
-
-        private void help(object sender, EventArgs e)
-        {
-            this.form1.helpToolStripMenuItem_Click(sender, e);
         }
     }
 }
