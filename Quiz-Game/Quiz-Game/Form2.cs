@@ -15,7 +15,7 @@ namespace Quiz_Game
     {
         public MySqlConnection myCon;
         int counter = 0;
-        string[] naskah, jawaban, option1, option2, option3, option4;
+        string[] naskah, jawaban, option1, option2, option3, option4,mapel;
         string[] jenisMapel = {"sejarah","matematika","biologi","kimia","fisika"};
         int banyakRow = 10;
         int counterBiologi, counterFisika, counterSejarah, counterMatematika, counterKimia;
@@ -28,7 +28,7 @@ namespace Quiz_Game
             string conStr = "datasource=sql12.freemysqlhosting.net; port=3306; username=sql12259336; password=K2cckElyBj;database=sql12259336;SslMode=none";
             myCon = new MySqlConnection(conStr);
         }
-
+        
         private void Form2_Load(object sender, EventArgs e)
         {
             naskah = new string[banyakRow];
@@ -37,6 +37,7 @@ namespace Quiz_Game
             option3 = new string[banyakRow];
             option4 = new string[banyakRow];
             jawaban = new string[banyakRow];
+            mapel = new string[banyakRow];
             MySqlDataReader myReader;
 
             int i = 0;
@@ -55,6 +56,7 @@ namespace Quiz_Game
                     option3[i] = myReader[4].ToString();
                     option4[i] = myReader[5].ToString();
                     jawaban[i] = myReader[6].ToString();
+                    mapel[i] = myReader[7].ToString();
                     i++;
                 }
                 myReader.Close();
@@ -115,7 +117,6 @@ namespace Quiz_Game
             if (jawaban[counter].Equals(pilihan))
             {
                 MessageBox.Show("BENAR");
-                nilai = nilai + 10;
             }
             else
             {
@@ -131,6 +132,12 @@ namespace Quiz_Game
                 button2.Text = option2[counter];
                 button3.Text = option3[counter];
                 button4.Text = option4[counter];
+            }
+            else
+            {
+                Form f4 = new Form4();
+                this.Hide();
+                f4.Show();
             }
         }
     }
