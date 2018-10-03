@@ -30,15 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.nilai3 = new System.Windows.Forms.Label();
             this.nilai2 = new System.Windows.Forms.Label();
             this.nilai1 = new System.Windows.Forms.Label();
-=======
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
             this.player3 = new System.Windows.Forms.Label();
             this.player2 = new System.Windows.Forms.Label();
             this.player1 = new System.Windows.Forms.Label();
@@ -52,13 +46,8 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.player5 = new System.Windows.Forms.Label();
             this.player4 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.nilai5 = new System.Windows.Forms.Label();
             this.nilai4 = new System.Windows.Forms.Label();
-=======
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -86,7 +75,6 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-<<<<<<< HEAD
             // nilai3
             // 
             this.nilai3.AutoSize = true;
@@ -122,43 +110,6 @@
             this.nilai1.Size = new System.Drawing.Size(41, 44);
             this.nilai1.TabIndex = 28;
             this.nilai1.Text = "0";
-=======
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(614, 328);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 44);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "nilai1";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(614, 271);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 44);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "nilai1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(614, 214);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 44);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "nilai1";
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
             // 
             // player3
             // 
@@ -282,7 +233,6 @@
             this.player4.TabIndex = 34;
             this.player4.Text = "player4";
             // 
-<<<<<<< HEAD
             // nilai5
             // 
             this.nilai5.AutoSize = true;
@@ -306,31 +256,6 @@
             this.nilai4.Size = new System.Drawing.Size(41, 44);
             this.nilai4.TabIndex = 36;
             this.nilai4.Text = "0";
-=======
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Black;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(614, 445);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 44);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "nilai1";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Black;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(614, 386);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 44);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "nilai1";
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
             // 
             // Form3
             // 
@@ -338,26 +263,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(844, 521);
-<<<<<<< HEAD
             this.Controls.Add(this.nilai4);
             this.Controls.Add(this.nilai5);
-=======
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
             this.Controls.Add(this.player4);
             this.Controls.Add(this.player5);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.buttonBack);
-<<<<<<< HEAD
             this.Controls.Add(this.nilai3);
             this.Controls.Add(this.nilai2);
             this.Controls.Add(this.nilai1);
-=======
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
             this.Controls.Add(this.player3);
             this.Controls.Add(this.player2);
             this.Controls.Add(this.player1);
@@ -378,15 +292,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonBack;
-<<<<<<< HEAD
         private System.Windows.Forms.Label nilai3;
         private System.Windows.Forms.Label nilai2;
         private System.Windows.Forms.Label nilai1;
-=======
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
         private System.Windows.Forms.Label player3;
         private System.Windows.Forms.Label player2;
         private System.Windows.Forms.Label player1;
@@ -400,12 +308,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.Label player5;
         private System.Windows.Forms.Label player4;
-<<<<<<< HEAD
         private System.Windows.Forms.Label nilai5;
         private System.Windows.Forms.Label nilai4;
-=======
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
->>>>>>> d2c0fa0d7bc4db67989d58ba1fa92b1e1b0c73ee
     }
 }

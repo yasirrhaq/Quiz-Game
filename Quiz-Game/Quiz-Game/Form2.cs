@@ -120,5 +120,29 @@ namespace Quiz_Game
                 f4.Show();
             }
         }
+        //hitung counter per soal
+        private void hitungCounter(int cek)
+        {
+            if (mapel[cek].ToString().Equals("kimia"))
+            {
+                counterKimia++;
+            }
+            else if (mapel[cek].ToString().Equals("matematika"))
+            {
+                counterMatematika++;
+            }
+            else if (mapel[cek].ToString().Equals("sejarah"))
+            {
+                counterSejarah++;
+            }
+            else if (mapel[cek].ToString().Equals("biologi"))
+            {
+                counterBiologi++;
+            }
+            else if (mapel[cek].ToString().Equals("fisika"))
+            {
+                counterFisika++;
+            }
+        }
     }
 }
