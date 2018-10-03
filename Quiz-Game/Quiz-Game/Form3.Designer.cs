@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.nilai3 = new System.Windows.Forms.Label();
+            this.nilai2 = new System.Windows.Forms.Label();
+            this.nilai1 = new System.Windows.Forms.Label();
+            this.player3 = new System.Windows.Forms.Label();
+            this.player2 = new System.Windows.Forms.Label();
+            this.player1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +44,10 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.player5 = new System.Windows.Forms.Label();
+            this.player4 = new System.Windows.Forms.Label();
+            this.nilai5 = new System.Windows.Forms.Label();
+            this.nilai4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,77 +75,77 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // label6
+            // nilai3
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(614, 339);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 44);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "20";
+            this.nilai3.AutoSize = true;
+            this.nilai3.BackColor = System.Drawing.Color.Black;
+            this.nilai3.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilai3.ForeColor = System.Drawing.Color.White;
+            this.nilai3.Location = new System.Drawing.Point(614, 328);
+            this.nilai3.Name = "nilai3";
+            this.nilai3.Size = new System.Drawing.Size(41, 44);
+            this.nilai3.TabIndex = 30;
+            this.nilai3.Text = "0";
             // 
-            // label5
+            // nilai2
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(614, 280);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 44);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "30";
+            this.nilai2.AutoSize = true;
+            this.nilai2.BackColor = System.Drawing.Color.Black;
+            this.nilai2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilai2.ForeColor = System.Drawing.Color.White;
+            this.nilai2.Location = new System.Drawing.Point(614, 271);
+            this.nilai2.Name = "nilai2";
+            this.nilai2.Size = new System.Drawing.Size(41, 44);
+            this.nilai2.TabIndex = 29;
+            this.nilai2.Text = "0";
             // 
-            // label4
+            // nilai1
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(614, 214);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 44);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "90";
+            this.nilai1.AutoSize = true;
+            this.nilai1.BackColor = System.Drawing.Color.Black;
+            this.nilai1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilai1.ForeColor = System.Drawing.Color.White;
+            this.nilai1.Location = new System.Drawing.Point(614, 214);
+            this.nilai1.Name = "nilai1";
+            this.nilai1.Size = new System.Drawing.Size(41, 44);
+            this.nilai1.TabIndex = 28;
+            this.nilai1.Text = "0";
             // 
-            // label7
+            // player3
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Black;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(178, 339);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 44);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Yasir";
+            this.player3.AutoSize = true;
+            this.player3.BackColor = System.Drawing.Color.Black;
+            this.player3.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player3.ForeColor = System.Drawing.Color.White;
+            this.player3.Location = new System.Drawing.Point(178, 328);
+            this.player3.Name = "player3";
+            this.player3.Size = new System.Drawing.Size(155, 44);
+            this.player3.TabIndex = 27;
+            this.player3.Text = "player3";
             // 
-            // label3
+            // player2
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(178, 280);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 44);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Ega";
+            this.player2.AutoSize = true;
+            this.player2.BackColor = System.Drawing.Color.Black;
+            this.player2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player2.ForeColor = System.Drawing.Color.White;
+            this.player2.Location = new System.Drawing.Point(178, 271);
+            this.player2.Name = "player2";
+            this.player2.Size = new System.Drawing.Size(155, 44);
+            this.player2.TabIndex = 26;
+            this.player2.Text = "player2";
             // 
-            // label2
+            // player1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(178, 214);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 44);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Hamo";
+            this.player1.AutoSize = true;
+            this.player1.BackColor = System.Drawing.Color.Black;
+            this.player1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player1.ForeColor = System.Drawing.Color.White;
+            this.player1.Location = new System.Drawing.Point(178, 214);
+            this.player1.Name = "player1";
+            this.player1.Size = new System.Drawing.Size(155, 44);
+            this.player1.TabIndex = 25;
+            this.player1.Text = "player1";
             // 
             // panel1
             // 
@@ -205,20 +209,72 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // player5
+            // 
+            this.player5.AutoSize = true;
+            this.player5.BackColor = System.Drawing.Color.Black;
+            this.player5.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player5.ForeColor = System.Drawing.Color.White;
+            this.player5.Location = new System.Drawing.Point(178, 445);
+            this.player5.Name = "player5";
+            this.player5.Size = new System.Drawing.Size(155, 44);
+            this.player5.TabIndex = 33;
+            this.player5.Text = "player5";
+            // 
+            // player4
+            // 
+            this.player4.AutoSize = true;
+            this.player4.BackColor = System.Drawing.Color.Black;
+            this.player4.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player4.ForeColor = System.Drawing.Color.White;
+            this.player4.Location = new System.Drawing.Point(178, 386);
+            this.player4.Name = "player4";
+            this.player4.Size = new System.Drawing.Size(155, 44);
+            this.player4.TabIndex = 34;
+            this.player4.Text = "player4";
+            // 
+            // nilai5
+            // 
+            this.nilai5.AutoSize = true;
+            this.nilai5.BackColor = System.Drawing.Color.Black;
+            this.nilai5.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilai5.ForeColor = System.Drawing.Color.White;
+            this.nilai5.Location = new System.Drawing.Point(614, 445);
+            this.nilai5.Name = "nilai5";
+            this.nilai5.Size = new System.Drawing.Size(41, 44);
+            this.nilai5.TabIndex = 35;
+            this.nilai5.Text = "0";
+            // 
+            // nilai4
+            // 
+            this.nilai4.AutoSize = true;
+            this.nilai4.BackColor = System.Drawing.Color.Black;
+            this.nilai4.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nilai4.ForeColor = System.Drawing.Color.White;
+            this.nilai4.Location = new System.Drawing.Point(614, 386);
+            this.nilai4.Name = "nilai4";
+            this.nilai4.Size = new System.Drawing.Size(41, 44);
+            this.nilai4.TabIndex = 36;
+            this.nilai4.Text = "0";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(844, 521);
+            this.Controls.Add(this.nilai4);
+            this.Controls.Add(this.nilai5);
+            this.Controls.Add(this.player4);
+            this.Controls.Add(this.player5);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.nilai3);
+            this.Controls.Add(this.nilai2);
+            this.Controls.Add(this.nilai1);
+            this.Controls.Add(this.player3);
+            this.Controls.Add(this.player2);
+            this.Controls.Add(this.player1);
             this.Controls.Add(this.panel1);
             this.Name = "Form3";
             this.Text = "Quiz Game";
@@ -236,12 +292,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label nilai3;
+        private System.Windows.Forms.Label nilai2;
+        private System.Windows.Forms.Label nilai1;
+        private System.Windows.Forms.Label player3;
+        private System.Windows.Forms.Label player2;
+        private System.Windows.Forms.Label player1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
@@ -250,5 +306,9 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.Label player5;
+        private System.Windows.Forms.Label player4;
+        private System.Windows.Forms.Label nilai5;
+        private System.Windows.Forms.Label nilai4;
     }
 }

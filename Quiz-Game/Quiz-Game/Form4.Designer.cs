@@ -85,9 +85,9 @@
             this.nilaiHistory.ForeColor = System.Drawing.Color.Black;
             this.nilaiHistory.Location = new System.Drawing.Point(563, 354);
             this.nilaiHistory.Name = "nilaiHistory";
-            this.nilaiHistory.Size = new System.Drawing.Size(60, 36);
+            this.nilaiHistory.Size = new System.Drawing.Size(31, 36);
             this.nilaiHistory.TabIndex = 42;
-            this.nilaiHistory.Text = "2/2";
+            this.nilaiHistory.Text = "0";
             // 
             // label11
             // 
@@ -121,9 +121,9 @@
             this.nilaiChemistry.ForeColor = System.Drawing.Color.Black;
             this.nilaiChemistry.Location = new System.Drawing.Point(563, 318);
             this.nilaiChemistry.Name = "nilaiChemistry";
-            this.nilaiChemistry.Size = new System.Drawing.Size(60, 36);
+            this.nilaiChemistry.Size = new System.Drawing.Size(31, 36);
             this.nilaiChemistry.TabIndex = 39;
-            this.nilaiChemistry.Text = "1/2";
+            this.nilaiChemistry.Text = "0";
             // 
             // label
             // 
@@ -157,9 +157,9 @@
             this.nilaiPhysics.ForeColor = System.Drawing.Color.Black;
             this.nilaiPhysics.Location = new System.Drawing.Point(563, 282);
             this.nilaiPhysics.Name = "nilaiPhysics";
-            this.nilaiPhysics.Size = new System.Drawing.Size(60, 36);
+            this.nilaiPhysics.Size = new System.Drawing.Size(31, 36);
             this.nilaiPhysics.TabIndex = 36;
-            this.nilaiPhysics.Text = "2/2";
+            this.nilaiPhysics.Text = "0";
             // 
             // nilaiMath
             // 
@@ -169,9 +169,9 @@
             this.nilaiMath.ForeColor = System.Drawing.Color.Black;
             this.nilaiMath.Location = new System.Drawing.Point(563, 246);
             this.nilaiMath.Name = "nilaiMath";
-            this.nilaiMath.Size = new System.Drawing.Size(60, 36);
+            this.nilaiMath.Size = new System.Drawing.Size(31, 36);
             this.nilaiMath.TabIndex = 35;
-            this.nilaiMath.Text = "2/2";
+            this.nilaiMath.Text = "0";
             this.nilaiMath.Click += new System.EventHandler(this.label5_Click);
             // 
             // nilaiBio
@@ -182,9 +182,9 @@
             this.nilaiBio.ForeColor = System.Drawing.Color.Black;
             this.nilaiBio.Location = new System.Drawing.Point(563, 210);
             this.nilaiBio.Name = "nilaiBio";
-            this.nilaiBio.Size = new System.Drawing.Size(60, 36);
+            this.nilaiBio.Size = new System.Drawing.Size(31, 36);
             this.nilaiBio.TabIndex = 34;
-            this.nilaiBio.Text = "1/2";
+            this.nilaiBio.Text = "0";
             // 
             // label7
             // 

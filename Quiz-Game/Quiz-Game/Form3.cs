@@ -33,15 +33,29 @@ namespace Quiz_Game
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM PLAYER where order by nilai desc LIMIT 2";
+            myCon.Open();
+            string query = "SELECT top 5 * FROM PLAYER desc";
             MySqlCommand myCommand = new MySqlCommand(query, myCon);
             MySqlDataReader myReader = myCommand.ExecuteReader();
-            while (myReader.Read())
+            for (int i = 0; myReader.Read(); i++)
             {
-                naskah[i] = myReader[1].ToString();
-                option1[i] = myReader[2].ToString();
-                option2[i] = myReader[3].ToString();
+                dataUsername[i] = myReader[1].ToString();
+                dataNilai[i] =Convert.ToInt16(myReader[1]);
             }
+            myReader.Close();
+            myCon.Close();
+            player1.Text = dataUsername[0];
+            player2.Text = dataUsername[1];
+            player3.Text = dataUsername[2];
+            player4.Text = dataUsername[3];
+            player5.Text = dataUsername[4];
+
+            nilai1.Text = dataNilai[0].ToString();
+            nilai2.Text = dataNilai[1].ToString();
+            nilai3.Text = dataNilai[2].ToString();
+            nilai4.Text = dataNilai[3].ToString();
+            nilai5.Text = dataNilai[4].ToString();
         }
+        
     }
 }

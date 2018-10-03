@@ -48,7 +48,9 @@ namespace Quiz_Game
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form f3 = new Form3();
+            this.Hide();
+            f3.Show();
         }
     }
 }
