@@ -16,13 +16,7 @@ namespace Quiz_Game
     {
         public MySqlConnection myCon;
         int counter = 0;
-        string[] naskah;
-        string[] option1;
-        string[] option2;
-        string[] option3;
-        string[] option4;
-        string[] jawaban;
-        string[] mapel;
+        string[] naskah, jawaban, option1, option2, option3, option4, mapel;
         bool[] sudahMuncul;
         int banyakRow = 0;
         int counterBiologi, counterFisika, counterSejarah, counterMatematika,counterKimia;
@@ -43,7 +37,7 @@ namespace Quiz_Game
             try
             {
                 myCon.Open();
-                MySqlCommand myCommand = new MySqlCommand("select* from soal", myCon);
+                MySqlCommand myCommand = new MySqlCommand("SELECT * FROM soal where mapel='matematika' ORDER BY RAND()LIMIT 2", myCon);
                 myReader = myCommand.ExecuteReader();
 
                 while (myReader.Read())
