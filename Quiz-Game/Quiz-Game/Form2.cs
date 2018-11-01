@@ -62,7 +62,7 @@ namespace Quiz_Game
                     mapel[i] = myReader[7].ToString();
                     i++;
                 }
-                myReader.Close();
+                myReader.Close(); 
             }
             myCon.Close();
             soal.Text = (counter + 1) + ". " + naskah[counter];
